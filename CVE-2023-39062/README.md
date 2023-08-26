@@ -1,6 +1,11 @@
 # CVE-2023-39062
 Spipu Html2Pdf < 5.2.8 - XSS vulnerabilities in example files. 
 
+## Timeline
+- Vulnerability reported to vendor: 18.07.2023
+- New fixed 5.2.8 version released: 18.07.2023
+- Public disclosure: 23.08.2023
+
 ## Description
 
 Cross-Site-Scripting (XSS) vulnerability in Spipu Html2Pdf example files. This vulnerability allows an attacker to execute untrusted JavaScript code in the context of the currently logged-in user.
