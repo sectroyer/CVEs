@@ -1,5 +1,5 @@
 # CVE-2023-45184
-IBM i Access Client Solution < 1.1.9.4 - Local server broken access control. 
+IBM i Access Client Solutions < 1.1.9.4 - Local server broken access control. 
 
 ## Timeline
 - Vulnerability reported to vendor: 22.09.2023
@@ -8,7 +8,7 @@ IBM i Access Client Solution < 1.1.9.4 - Local server broken access control.
 
 ## Description
 
-IBM i Access Client Solution for storing temporary password encryption key uses separate local server which is started on random tcp6 port. Application retrieves this temporary encryption key without any access control. 
+IBM i Access Client Solutions for storing temporary password encryption key uses separate local server which is started on random tcp6 port. Application retrieves this temporary encryption key without any access control. 
 
 The local server can be easily found using the `netstat' command:
 ```
@@ -74,13 +74,13 @@ Credentials server seems to be dead :)
 └─$
 ```
 
-This problem was caused by a lack of request source access control. This issue is fixed in IBM i Access Client Solution 1.1.9.4.
+This problem was caused by a lack of request source access control. This issue is fixed in IBM i Access Client Solutions 1.1.9.4.
 
 ## Affected versions
 < 1.1.9.4
 
 ## Advisory
-Update IBM i Access Client Solution to 1.1.9.4 or newer.
+Update IBM i Access Client Solutions to 1.1.9.4 or newer.
 
 ### References
 * https://www.ibm.com/support/pages/node/7091942
