@@ -8,7 +8,7 @@ IBM i Access Client Solutions < 1.1.9.4 - Weak password encryption
 
 ## Description
 
-IBM i Access Client Solutions for storing user passwords uses AES algorith however 16 bytes encryption key is the combination of static string (`Thanatos`) and random characters from string which consists of another static string `Behemoth` combined with username, users' home folder, OS (for example `Linux`) combined with current directory where the application was started. As a result half of encryption key is static (string `Thanatos`) whereas second half is very limited. This makes it very easy for attack to brute force password even on single CPU core.
+IBM i Access Client Solutions for storing user passwords uses AES algorith however 16 bytes encryption key is the combination of static string (`Thanatos`) and random characters from string which consists of another static string (`Behemoth`) combined with username, users' home folder, OS (for example `Linux`) combined with current directory where the application was started. As a result half of the encryption key is static (string `Thanatos`) whereas the second half is very limited. This makes it very easy for an attacker to brute force password even on a single CPU core.
 
 Here is an example of password decryption of `mmajchrowicz` user using the `as400_password_bruteforce_tool.java` script from the `mkubiak` account:
 ```
